@@ -1,15 +1,16 @@
 body {
-  margin: 0;
-  padding: 0;
   background-color: #f2f2f2;
-  display: flex;
+  /* margin: 0;
+  padding: 0; */
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start; */
 }
 
 .header {
   position: absolute;
-  left: 0;
+  left: 5;
   top: -10px;
   font-size: 1.6rem;
   color: #4e6844;

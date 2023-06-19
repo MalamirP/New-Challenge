@@ -1,6 +1,21 @@
 /* main div for card */
+.flex-row-container {
+  /* background: #aaa; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin-left: 50px;
+}
+
+.flex-row-container > .card {
+  flex: 1 1 30%; /*grow | shrink | basis */
+  height: 100px;
+}
+
 .card {
-  max-width: 350px;
+  max-width: 320px;
   padding: 15px;
   background-color: #fff;
   margin: 0 20px;
@@ -37,8 +52,7 @@
 }
 
 .content .view-category-btn {
-  text-align: center;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 /* BTN FOR VIEW INTERATION WITH CATEGORY */
