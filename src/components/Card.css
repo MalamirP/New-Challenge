@@ -1,0 +1,60 @@
+/* main div for card */
+.card {
+  max-width: 350px;
+  padding: 15px;
+  background-color: #fff;
+  margin: 0 20px;
+  box-shadow: 0 0 15px #0000000d;
+  min-height: 500px;
+  /* border: 10px solid red; */
+  margin-top: 50px;
+}
+
+.card img {
+  /* position: relative; */
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+}
+
+/* Nested btn in card div */
+.btn-img {
+  position: relative;
+  bottom: 65px;
+  left: 10px;
+  background-color: #4e6844;
+  padding: 10px 30px;
+  color: #fff;
+  border: 2px solid #657c5c;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+/* Content for every Card like H3 and P */
+.content {
+  text-align: center;
+  margin-top: -35px;
+}
+
+.content .view-category-btn {
+  text-align: center;
+  margin-top: 35px;
+}
+
+/* BTN FOR VIEW INTERATION WITH CATEGORY */
+.view-category-btn {
+  background-color: #4e6844;
+  border: 2px solid #657c5c;
+  font-size: 1rem;
+  padding: 15px;
+  width: 65%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+}
+
+.view-category-btn:hover {
+  background-color: #fff;
+  color: #4e6844;
+}
