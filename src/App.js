@@ -8,7 +8,7 @@ function App() {
       imgsrc: 'https://images.unsplash.com/photo-1616271049250-02a7697e99ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
       btnCategory: 'Sport',
       title: 'Sport & Environmental Impact',
-      pContent: 'From transportation of athletes and spectators to energy consumption during events sports can contribute significantly to greenhouse gas emissions',
+      pContent: 'From transportation of athletes and spectators to energy consumption during events sports can contribute significantly to greenhouse gas emissions ',
       btnViewCategory: 'View Category',
 
     },

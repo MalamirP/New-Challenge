@@ -1,4 +1,5 @@
 /* main div for card */
+
 .flex-row-container {
   /* background: #aaa; */
   display: flex;
@@ -23,6 +24,8 @@
   min-height: 500px;
   /* border: 10px solid red; */
   margin-top: 50px;
+  /* min-height: 480px; */
+  overflow: hidden;
 }
 
 .card img {
@@ -48,11 +51,15 @@
 /* Content for every Card like H3 and P */
 .content {
   text-align: center;
-  margin-top: -35px;
+  margin-top: -10px;
+}
+
+.content p {
+  overflow: hidden;
+  min-height: 80px;
 }
 
 .content .view-category-btn {
-  margin-top: 45px;
 }
 
 /* BTN FOR VIEW INTERATION WITH CATEGORY */
