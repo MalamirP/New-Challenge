@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import './Card.css'
 function Card(props) {
-
 
     return (
         <div className='flex-row-container'>
@@ -10,7 +10,7 @@ function Card(props) {
                 <div className="content">
                     <h3>{props.title}</h3>
                     <p>{props.pContent}</p>
-                    <button className="view-category-btn">{props.btnViewCategory}</button>
+                    <Link to="view-category" className="view-category-btn">View Category</Link>
                 </div>
             </div>
         </div>
