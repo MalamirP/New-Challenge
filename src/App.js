@@ -1,5 +1,8 @@
+import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+
 import Card from './components/Card'
 import './App.css'
+import Category from './components/Category';
 
 function App() {
   const data = [
@@ -71,20 +74,28 @@ function App() {
 
   ]
   return (
+    <div>
+      <h2 className='header'>Events causing Global Warming</h2>
+      <BrowserRouter>
+        <Routes>
+          {/* Route for the category page */}
+          <Route path="/category" element={<Category />} />
 
-    <div className=''>
-      <h2 className='header'>Events causing Global Warming
-      </h2>
-      {data.map(item => (
-        <Card
-          key={item.id}
-          imgsrc={item.imgsrc}
-          btnCategory={item.btnCategory}
-          title={item.title}
-          pContent={item.pContent}
-          btnViewCategory={item.btnViewCategory}
-        />
-      ))}
+          {/* Render the card list */}
+          {data.map(item => (
+            <Card
+              key={item.id}
+              imgsrc={item.imgsrc}
+              btnCategory={item.btnCategory}
+              title={item.title}
+              pContent={item.pContent}
+            >
+              {/* Use Link to navigate to the category page */}
+              <Link to="/category">{item.btnViewCategory}</Link>
+            </Card>
+          ))}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
