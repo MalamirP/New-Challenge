@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom"
 
-import Card from "../components/Card"
+import Card from "../../components/Card/Card"
+
+import './Category.css'
+
 
 export default function Category() {
 
@@ -74,7 +77,7 @@ export default function Category() {
     ]
 
     return (
-        <div>
+        <div className="category-page">
             <h2 className='header'>Events causing Global Warming</h2>
             {/* Render the card list */}
             {data.map(item => (

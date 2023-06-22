@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 30px 35px;
+  align-items: center;
+}
+
+.logo-greenFlag {
+  height: 70px;
+  width: 90px;
+}
+
+.logo-uk {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
