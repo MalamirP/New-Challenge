@@ -19,7 +19,7 @@ function Header() {
         <div className='header'>
             <div className="flex-header">
                 <img className="logo-greenFlag" src={logoGreen} />
-                <Link to={iSUk ? '/' : 'view-italy-category'}>
+                <Link to={iSUk ? '/' : 'it'}>
                     <img className="logo-uk " onClick={() => {
                         if (iSUk === true) {
                             setISUk(false);

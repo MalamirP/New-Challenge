@@ -7,11 +7,3 @@ body {
   justify-content: center;
   align-items: flex-start; */
 }
-
-.header {
-  position: absolute;
-  left: 5;
-  top: -10px;
-  font-size: 1.6rem;
-  color: #4e6844;
-}

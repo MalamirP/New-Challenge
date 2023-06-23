@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 import Card from "../../components/Card/Card"
 
-import './Category.css'
+import './Category-ENG.css'
 
 
 export default function Category() {
@@ -88,8 +88,6 @@ export default function Category() {
                     title={item.title}
                     pContent={item.pContent}
                 >
-                    {/* Use Link to navigate to the category page */}
-                    <Link to="/category">View Category</Link>
                 </Card>
             ))}
         </div>
