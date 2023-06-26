@@ -1,0 +1,33 @@
+.container {
+  width: 300px;
+  padding: 16px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.container button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
