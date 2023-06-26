@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import './LoginPage.css'
 
 function LoginPage() {
+    const navigate = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = (e) => {
-        e.preventDefault();
 
         fetch('http://188.166.21.103:4000/auth/login', {
             method: 'POST',
@@ -23,11 +24,15 @@ function LoginPage() {
             .then((data) => {
                 // Handle the response data
                 sessionStorage.setItem("token", data.token)
-                console.log(data, `sessionStorage set with token value: ${data.token}`)
+                if (data.token) {
+                    navigate('/en');
+                }
             })
             .catch((error) => {
                 console.error('Error:', error);
             });
+        e.preventDefault();
+
     };
 
 
@@ -42,6 +47,7 @@ function LoginPage() {
                     placeholder="Your email.."
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                 />
 
 
@@ -52,6 +58,8 @@ function LoginPage() {
                     placeholder="Your password.."
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    required
+
                 />
                 <button type="submit">Login</button>
             </form>

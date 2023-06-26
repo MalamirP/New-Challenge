@@ -1,11 +1,37 @@
 import { Link } from "react-router-dom"
+import { useState, useEffect } from "react";
 
 import Card from "../../components/Card/Card"
 
 import './Category-ENG.css'
 
 
+
+
 export default function Category() {
+
+    const [categories, setCategories] = useState([]);
+
+    const token = sessionStorage.getItem('token');
+
+    useEffect(() => {
+        fetch('http://188.166.21.103:4000/category?language=en', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            }
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                setCategories(data);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }, []);
+
+    console.log(categories)
 
     const data = [
         {
