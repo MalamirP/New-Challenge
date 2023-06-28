@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import Card from "../../components/Card/Card";
+import Header from "../../components/Header/Header";
 
 
 function ItalyCategoryPage() {
@@ -45,6 +46,7 @@ function ItalyCategoryPage() {
 
     return (
         <div className="category-page">
+            <Header />
             <h2 className='header'>Eventi che Causano il Riscaldamento Globale</h2>
             {/* Render the card list */}
             {data.map(item => (

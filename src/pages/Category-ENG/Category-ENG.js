@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Card from "../../components/Card/Card"
 
 import './Category-ENG.css'
+import Header from "../../components/Header/Header";
 
 
 
@@ -31,11 +32,9 @@ export default function Category() {
             });
     }, []);
 
-
-
-
     return (
         <div className="category-page">
+            <Header />
             <h2 className='header'>Events causing Global Warming</h2>
             {/* Render the card list */}
             {categories.map(item => (
