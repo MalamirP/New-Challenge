@@ -39,7 +39,7 @@ function LoginPage() {
     return (
         <div className="container">
             <h2>Login</h2>
-            <form onClick={handleSubmit}>
+            <form >
                 <label htmlFor="email">Email:</label>
                 <input type="text"
                     id="email"
@@ -61,7 +61,7 @@ function LoginPage() {
                     required
 
                 />
-                <button type="submit">Login</button>
+                <button type="submit" onClick={handleSubmit} >Login</button>
             </form>
         </div>
     )
